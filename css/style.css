@@ -17,6 +17,7 @@ header {
   width:100%;
   padding: 0 10%;
   background: #0c325a;
+  overflow: hidden;
   z-index: -1;
 }
 
@@ -119,13 +120,57 @@ header::after {
 main .presentazione {
   height: 10%;
   width: 100%;
-  background: darkgrey;/* cancellare */
+  color: black;
+  background: darkgrey;
 }
+main .presentazione h2 {
+  line-height: 50px;
+  font-weight: 800;
+}
+
 main .settore {
   height: 45%;
   width: 100%;
   background: white; /* cancellare */
+  margin: auto;
 }
+
+main .settore .vantaggio {
+  float:left;
+  width: 30%;
+  height: 100%;
+}
+main .settore .vantaggio:first-child {
+  margin-left: 5%;
+}
+
+main .settore .vantaggio:last-child {
+  margin-right: 5%;
+}
+
+main .settore .vantaggio img {
+  height: 40%;
+  margin: 2% 0;
+}
+
+main .settore .vantaggio h2 {
+  font-weight: 700;
+  font-size: 120%;
+  margin: 0 10%;
+  color: lightgreen;
+}
+
+main .settore .vantaggio hr {
+  width: 20%;
+  margin: auto;
+}
+
+main .settore .vantaggio p {
+  height: 40%;
+  padding: 0 5%;
+  margin: 2% 0;
+}
+
 main .uno {
   border-bottom: 2px solid darkgrey;
 }
