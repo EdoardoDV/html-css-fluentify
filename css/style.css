@@ -8,6 +8,7 @@
 
 /* INIZIO STILI GENERICI */
 body {
+  position:relative;
   text-align: center;
   font-family: 'Manrope', sans-serif;
 }
@@ -29,13 +30,13 @@ a {
 main {
   height: 800px;
   width: 100%;
-  background: lightgrey;/* cancellare */
+  background: white;
 }
 
 footer {
-  height: 300px;
+  height: 100px;
   width: 100%;
-  background: grey;/* cancellare */
+  background: lightgrey;
 }
 
 /* FINE STILI GENERICI */
@@ -50,8 +51,8 @@ header .menu .logo img {
   display: inline-block;
   top: 0;
   right: 0;
-  height: 100px;
-  transform: translate(0%, -10%);
+  height: 40px;
+  transform: translate(0%, 50%);
 }
 header .menu .opzioni li {
   list-style: none;
@@ -59,7 +60,7 @@ header .menu .opzioni li {
   color: white;
   font-size: 15px;
   font-weight: 600;
-  padding: 31px 15px;
+  padding: 31px 20px;
   float:left;
 }
 
@@ -84,13 +85,13 @@ header .menu .buttons .piano {
 
 header .slogan {
   height: 80%;
-  width: 50%;
+  width: 40%;
   float: left;
-  text-align: left;
   color: white;
 }
 header .slogan h1 {
   margin: 20px 250px 40px 0px;
+  text-align: left;
 }
 
 header .slogan h2 {
@@ -101,12 +102,11 @@ header .slogan h2 {
   border-radius: 5px;
 
 }
+
 header .image img {
   float: right;
   height: 300px;
-  top: 100%;
-  left: 100%;
-  transform: translate(36%, -101%);
+  transform: translate(35%, 25px);
 }
 
 header::after {
@@ -156,6 +156,7 @@ main .settore .vantaggio img {
 main .settore .vantaggio h2 {
   font-weight: 700;
   font-size: 120%;
+  padding: 1.5% 0;
   margin: 0 10%;
   color: lightgreen;
 }
@@ -167,15 +168,83 @@ main .settore .vantaggio hr {
 
 main .settore .vantaggio p {
   height: 40%;
-  padding: 0 5%;
-  margin: 2% 0;
+  padding: 3% 5%;
+  color: darkgrey;
 }
 
 main .uno {
   border-bottom: 2px solid darkgrey;
 }
+main .due img {
+  float: left;
+  width: 42%;
+  margin: 3% 0;
+  height: 80%;
+  margin-left: 5%;
+  margin-right: 3%;
+}
+
+main .due .descrizione {
+  float: right;
+  width: 42%;
+  height: 84%%;
+  margin: 3% 0;
+  margin-left: 3%;
+  margin-right: 5%;
+  text-align: left;
+}
+main .due .descrizione p {
+  margin-bottom: 5%;
+  color: darkgrey;
+}
+
+main .due .descrizione a p {
+  color: blue;
+  text-decoration: underline;
+}
 /* Fine Stili Main */
 
 /* Inizio Stili Footer */
+footer .titolo-footer h2 {
+  clear:left;
+  text-align: left;
+  float:left;
+  margin-left: 5%
+}
+
+footer .info {
+  float: right;
+  margin-right: 5%;
+}
+footer .info ul li{
+  list-style: none;
+  display: inline-block;
+
+}
+footer .info input{
+  background: lightgrey;
+  border: none;
+  text-align: center;
+  border-bottom:1px solid black;
+  margin: 0 10px;
+}
+
+footer a {
+  background: green;
+  padding: 5px;
+  border-radius: 5px;
+}
 
 /* Fine Stili Footer */
+
+h3 {
+  position: fixed;
+  bottom: -20px;
+  right: 5%;
+  height: 5%;
+  width: 5%;
+  background: green;
+  color:white;
+  border-radius: 5px;
+
+}
